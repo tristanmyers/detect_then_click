@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <style>
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  </style>
+  <body>
+    <input id="my-button" src="bonus_button.PNG" type="image" onclick="myFunction()"></input>
+    <script>
+    function myFunction()
+    {
+      document.getElementById('my-button').style.display ='none'; //first hide the button
+      setTimeout(function(){ //using setTimeout function
+      document.getElementById('my-button').style.display ='inline'; //displaying the button again after x seconds
+    }
+    ,10000);
+    }
+</script>
+  </body>
+</html>
